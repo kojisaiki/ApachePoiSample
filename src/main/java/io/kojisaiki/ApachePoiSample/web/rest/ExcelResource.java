@@ -18,7 +18,7 @@ public class ExcelResource {
     }
 
     @GetMapping("/simple")
-    public String getSimpleExcel() {
+    public String getSimpleExcel() throws Exception {
         String ret;
 
         ret = this.excelService.generateSimpleExcel();
